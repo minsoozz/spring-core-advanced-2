@@ -1,16 +1,16 @@
 package hello.proxy.app.v1;
 
-public class OrderControllerV1Impl implements OrderController {
+public class OrderControllerV1V1Impl implements OrderControllerV1 {
 
   private final OrderServiceV1 orderServiceV1;
 
-  public OrderControllerV1Impl(OrderServiceV1 orderServiceV1) {
+  public OrderControllerV1V1Impl(OrderServiceV1 orderServiceV1) {
     this.orderServiceV1 = orderServiceV1;
   }
 
   @Override
   public String request(String itemId) {
-    return orderServiceV1.orderItem(itemId);
+    orderServiceV1.orderItem(itemId);
     return "ok";
   }
 
