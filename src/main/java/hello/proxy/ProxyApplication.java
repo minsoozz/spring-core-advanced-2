@@ -17,7 +17,6 @@ public class ProxyApplication {
     SpringApplication.run(ProxyApplication.class, args);
   }
 
-
   @Bean
   public LogTrace logTrace() {
     return new ThreadLocalLogTrace();
